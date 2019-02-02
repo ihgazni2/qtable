@@ -1,5 +1,5 @@
 # qtable
->__I ...__
+>__In progressing...__
 
 # install
 >__pip3 install qtable
