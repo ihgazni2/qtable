@@ -1,1 +1,1 @@
-__all__ = ["qtable"]
+__all__ = ["qtable","funcs"]
