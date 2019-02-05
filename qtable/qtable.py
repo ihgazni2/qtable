@@ -151,4 +151,12 @@ class Qtable():
         return(Qtable(df=df))
     def transpose(self):
         return(_transpose(self.df))
+    def fliplr(self):
+        df = _fliplr(self.df,index_map=self.index_map,columns_map=self.columns_map)
+        return(Qtable(df=df))
+    def flipud(self):
+        df = _flipud(self.df,index_map=self.index_map,columns_map=self.columns_map)
+        return(Qtable(df=df))
+
+
 

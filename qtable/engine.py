@@ -51,6 +51,8 @@ __all__ = [
  '_swapcol',
  '_swaprow',
  '_transpose',
+ '_fliplr',
+ '_flipud'
 ]
 
 
@@ -577,20 +579,17 @@ def _transpose(df):
     df = df.T
     return(df)
 
-################
+def _fliplr(df,**kwargs):
+    columns = list(df.columns)
+    columns.reverse()
+    df = _reindex_cols(df,columns,**kwargs)
+    return(df)
 
+def _flipud(df,**kwargs):
+    index = list(df.index)
+    index.reverse()
+    df = _reindex_rows(df,index,**kwargs)
+    return(df)
 
-################
-
-
-# mapiv
-
-##################
-
-def _dcd_size(s):
-    colnums,rownums = s.lower().split("x")
-    colnums = int(colnums)
-    rownums = int(rownums)
-    return((colnums,rownums))
 
 
