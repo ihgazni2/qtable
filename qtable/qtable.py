@@ -1,3 +1,4 @@
+from qtable.engine import *
 
 class Qtable():
     def __init__(self,**kwargs):
@@ -70,62 +71,65 @@ class Qtable():
         else:
             df = _swapcol(self.df,colname1,colname2,index_map=self.index_map,columns_map=self.columns_map)
         return(Qtable(df=df))
-    def reindex_cols(self,*columns):
-        df = _reindex_cols(self.df,*columns)
+    def reindex_cols(self,*columns,**kwargs):
+        df = _reindex_cols(self.df,*columns,index_map=self.index_map,columns_map=self.columns_map,**kwargs)
         return(Qtable(df=df))
-    def swaprow(self,rowname1,rowname2):
-        df = _swaprow(self.df,rowname1,rowname2)
+    def swaprow(self,rowname1,rowname2,*args):
+        if(self.allow_duplicates):
+            df = _swaprow(self.df,rowname1,rowname2,*args,index_map=self.index_map,columns_map=self.columns_map)
+        else:
+            df = _swaprow(self.df,rowname1,rowname2,index_map=self.index_map,columns_map=self.columns_map)
         return(Qtable(df=df))
-    def reindex_rows(self,*index):
-        df = _reindex_rows(self.df,*index)
+    def reindex_rows(self,*index,**kwargs):
+        df = _reindex_rows(self.df,*index,index_map=self.index_map,columns_map=self.columns_map,**kwargs)
         return(Qtable(df=df))
-    def rmcol(self,colname):
-        df = _rmcol(self.df,colname)
+    def rmcol(self,colname,*whiches):
+        df = _rmcol(self.df,colname,*whiches,index_map=self.index_map,columns_map=self.columns_map)
         return(Qtable(df=df))
-    def rmcols(self,*colnames):
-        df = _rmcols(self.df,*colnames)
+    def rmcols(self,*colnames,**kwargs):
+        df = _rmcols(self.df,*colnames,index_map=self.index_map,columns_map=self.columns_map,**kwargs)
         return(Qtable(df=df))
-    def rmrow(self,colname):
-        df = _rmrow(self.df,colname)
+    def rmrow(self,colname,*whiches):
+        df = _rmrow(self.df,colname,*whiches,index_map=self.index_map,columns_map=self.columns_map)
         return(Qtable(df=df))
-    def rmrows(self,*colnames):
-        df = _rmrows(self.df,*colnames)
+    def rmrows(self,*colnames,**kwargs):
+        df = _rmrows(self.df,*colnames,index_map=self.index_map,columns_map=self.columns_map,**kwargs)
         return(Qtable(df=df))
-    def append_col(self,*args):
-        df = _append_col(self.df,*args)
+    def append_col(self,*args,**kwargs):
+        df = _append_col(self.df,*args,index_map=self.index_map,columns_map=self.columns_map,allow_duplicates=self.allow_duplicates,**kwargs)
         return(Qtable(df=df))
-    def append_cols(self,*args):
-        df = _append_cols(self.df,*args)
+    def append_cols(self,*args,**kwargs):
+        df = _append_cols(self.df,*args,index_map=self.index_map,columns_map=self.columns_map,allow_duplicates=self.allow_duplicates,**kwargs)
         return(Qtable(df=df))
-    def append_row(self,*args):
-        df = _append_row(self.df,*args)
+    def append_row(self,*args,**kwargs):
+        df = _append_row(self.df,*args,index_map=self.columns_map,columns_map=self.index_map,allow_duplicates=self.allow_duplicates,**kwargs)
         return(Qtable(df=df))
-    def append_rows(self,*args):
-        df = _append_rows(self.df,*args)
+    def append_rows(self,*args,**kwargs):
+        df = _append_rows(self.df,*args,index_map=self.columns_map,columns_map=self.index_map,allow_duplicates=self.allow_duplicates,**kwargs)
         return(Qtable(df=df))
-    def repl_col(self,*args):
-        df = _repl_col(self.df,*args)
+    def prepend_col(self,*args,**kwargs):
+        df = _prepend_col(self.df,*args,index_map=self.index_map,columns_map=self.columns_map,allow_duplicates=self.allow_duplicates,**kwargs)
         return(Qtable(df=df))
-    def repl_cols(self,*args):
-        df = _repl_cols(self.df,*args)
+    def prepend_cols(self,*args,**kwargs):
+        df = _prepend_cols(self.df,*args,index_map=self.index_map,columns_map=self.columns_map,allow_duplicates=self.allow_duplicates,**kwargs)
         return(Qtable(df=df))
-    def repl_row(self,*args):
-        df = _repl_row(self.df,*args)
+    def prepend_row(self,*args,**kwargs):
+        df = _prepend_row(self.df,*args,index_map=self.columns_map,columns_map=self.index_map,allow_duplicates=self.allow_duplicates,**kwargs)
         return(Qtable(df=df))
-    def repl_rows(self,*args):
-        df = _repl_rows(self.df,*args)
+    def prepend_rows(self,*args,**kwargs):
+        df = _prepend_rows(self.df,*args,index_map=self.columns_map,columns_map=self.index_map,allow_duplicates=self.allow_duplicates,**kwargs)
         return(Qtable(df=df))
-    def prepend_col(self,*args):
-        df = _prepend_col(self.df,*args)
+    def insert_col(self,pos,*args,**kwargs):
+        df = _insert_col(self.df,pos,*args,index_map=self.index_map,columns_map=self.columns_map,allow_duplicates=self.allow_duplicates,**kwargs)
         return(Qtable(df=df))
-    def prepend_cols(self,*args):
-        df = _prepend_cols(self.df,*args)
+    def insert_cols(self,pos,*args,**kwargs):
+        df = _insert_cols(self.df,pos,*args,index_map=self.index_map,columns_map=self.columns_map,allow_duplicates=self.allow_duplicates,**kwargs)
         return(Qtable(df=df))
-    def prepend_row(self,*args):
-        df = _prepend_row(self.df,*args)
+    def insert_row(self,pos,*args,**kwargs):
+        df = _insert_row(self.df,pos,*args,index_map=self.columns_map,columns_map=self.index_map,allow_duplicates=self.allow_duplicates,**kwargs)
         return(Qtable(df=df))
-    def prepend_rows(self,*args):
-        df = _prepend_rows(self.df,*args)
+    def insert_rows(self,pos,*args,**kwargs):
+        df = _insert_rows(self.df,pos,*args,index_map=self.columns_map,columns_map=self.index_map,allow_duplicates=self.allow_duplicates,**kwargs)
         return(Qtable(df=df))
     def rename_cols(self,*colnames):
         df = _rename_cols(self.df,*colnames)
@@ -133,13 +137,18 @@ class Qtable():
     def rename_rows(self,*rownames):
         df = _rename_rows(self.df,*rownames)
         return(Qtable(df=df))
-
-
-
-
-
-
-
-
-
+    def repl_col(self,pos,*args,**kwargs):
+        df = _repl_col(self.df,pos,*args,index_map=self.index_map,columns_map=self.columns_map,allow_duplicates=self.allow_duplicates,**kwargs)
+        return(Qtable(df=df))
+    def repl_cols(self,poses,*args,**kwargs):
+        df = _repl_cols(self.df,poses,*args,index_map=self.index_map,columns_map=self.columns_map,allow_duplicates=self.allow_duplicates,**kwargs)
+        return(Qtable(df=df))
+    def repl_row(self,pos,*args,**kwargs):
+        df = _repl_row(self.df,pos,*args,index_map=self.columns_map,columns_map=self.index_map,allow_duplicates=self.allow_duplicates,**kwargs)
+        return(Qtable(df=df))
+    def repl_rows(self,poses,*args,**kwargs):
+        df = _repl_rows(self.df,poses,*args,index_map=self.columns_map,columns_map=self.index_map,allow_duplicates=self.allow_duplicates,**kwargs)
+        return(Qtable(df=df))
+    def transpose(self):
+        return(_transpose(self.df))
 
