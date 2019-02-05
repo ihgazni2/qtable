@@ -15,7 +15,6 @@ __all__ = [
  '_cols',
  '_columns_map',
  '_crop',
- '_dcd_size',
  '_get_clocs',
  '_get_rlocs',
  '_getitem',
