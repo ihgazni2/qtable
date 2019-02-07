@@ -1,4 +1,8 @@
 from qtable.engine import *
+import pandas as pd
+import numpy as np
+
+
 
 class Qtable():
     def __init__(self,**kwargs):
