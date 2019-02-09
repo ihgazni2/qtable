@@ -2,7 +2,7 @@ Usage
 =====
 
 0. __init__
------------
+###########
 
     ::
     
@@ -18,7 +18,7 @@ Usage
 .. image:: ./images/__init__.svg
 
 1. __getitem__
---------------
+##############
 
     ::
     
@@ -40,7 +40,7 @@ Usage
 .. image:: ./images/__getitem__.svg
 
 2. __setitem__
---------------
+##############
 
     ::
     
@@ -63,7 +63,7 @@ Usage
 .. image:: ./images/__setitem__.svg
 
 3. row
-------
+######
 
     ::
     
@@ -84,7 +84,7 @@ Usage
 .. image:: ./images/row.svg
 
 4. col
-------
+######
 
     ::
     
@@ -104,7 +104,7 @@ Usage
 .. image:: ./images/col.svg
 
 5. cols
--------
+#######
 
     ::
     
@@ -127,7 +127,7 @@ Usage
 .. image:: ./images/cols.svg
 
 6. rows
--------
+#######
 
     ::
     
@@ -150,7 +150,7 @@ Usage
 .. image:: ./images/rows.svg
 
 7. subtb
---------
+########
 
     ::
     
@@ -170,7 +170,7 @@ Usage
 .. image:: ./images/subtb.svg
 
 8. crop
--------
+#######
 
     ::
     
@@ -191,7 +191,7 @@ Usage
 .. image:: ./images/crop.svg
 
 9. swapcol
-----------
+##########
 
     ::
     
@@ -212,7 +212,7 @@ Usage
 .. image:: ./images/swapcol.svg
 
 10. reindex_cols
-----------------
+################
 
     ::
     
@@ -234,7 +234,7 @@ Usage
 .. image:: ./images/reindex_cols.svg
 
 11. swaprow
------------
+###########
 
     ::
     
@@ -259,7 +259,7 @@ Usage
 .. image:: ./images/swaprow.svg
 
 12. reindex_rows
-----------------
+################
 
     ::
     
@@ -280,7 +280,7 @@ Usage
 .. image:: ./images/reindex_rows.svg
 
 13. rmcol
----------
+#########
 
     ::
     
@@ -303,7 +303,7 @@ Usage
 .. image:: ./images/rmcol.svg
 
 14. rmcols
-----------
+##########
 
     ::
     
@@ -329,7 +329,7 @@ Usage
 .. image:: ./images/rmcols.svg
 
 15. rmrow
----------
+#########
 
     ::
     
@@ -349,7 +349,7 @@ Usage
 .. image:: ./images/rmrow.svg
 
 16. rmrows
-----------
+##########
 
     ::
     
@@ -376,7 +376,7 @@ Usage
 .. image:: ./images/rmrows.svg
 
 17. insert_col-1
-----------------
+################
 
     ::
     
@@ -396,7 +396,7 @@ Usage
 .. image:: ./images/insert_col-1.svg
 
 18. insert_col-2
-----------------
+################
 
     ::
     
@@ -417,7 +417,7 @@ Usage
 .. image:: ./images/insert_col-2.svg
 
 19. insert_cols-1
------------------
+#################
 
     ::
     
@@ -439,7 +439,7 @@ Usage
 .. image:: ./images/insert_cols-1.svg
 
 20. insert_cols-2
------------------
+#################
 
     ::
     
@@ -464,7 +464,7 @@ Usage
 .. image:: ./images/insert_cols-2.svg
 
 21. insert_row-1
-----------------
+################
 
     ::
     
@@ -482,7 +482,7 @@ Usage
 .. image:: ./images/insert_row-1.svg
 
 22. insert_row-2
-----------------
+################
 
     ::
     
@@ -503,7 +503,7 @@ Usage
 .. image:: ./images/insert_row-2.svg
 
 23. insert_rows-1
------------------
+#################
 
     ::
     
@@ -521,7 +521,7 @@ Usage
 .. image:: ./images/insert_rows-1.svg
 
 24. insert_rows-2
------------------
+#################
 
     ::
     
@@ -543,7 +543,7 @@ Usage
 .. image:: ./images/insert_rows-2.svg
 
 25. append_col-1
-----------------
+################
 
     ::
     
@@ -563,7 +563,7 @@ Usage
 .. image:: ./images/append_col-1.svg
 
 26. append_col-2
-----------------
+################
 
     ::
     
@@ -581,7 +581,7 @@ Usage
 .. image:: ./images/append_col-2.svg
 
 27. append_cols-1
------------------
+#################
 
     ::
     
@@ -603,7 +603,7 @@ Usage
 .. image:: ./images/append_cols-1.svg
 
 28. append_cols-2
------------------
+#################
 
     ::
     
@@ -622,7 +622,7 @@ Usage
 .. image:: ./images/append_cols-2.svg
 
 29. append_row-1
-----------------
+################
 
     ::
     
@@ -640,7 +640,7 @@ Usage
 .. image:: ./images/append_row-1.svg
 
 30. append_row-2
-----------------
+################
 
     ::
     
@@ -661,7 +661,7 @@ Usage
 .. image:: ./images/append_row-2.svg
 
 31. append_rows-1
------------------
+#################
 
     ::
     
@@ -682,7 +682,7 @@ Usage
 .. image:: ./images/append_rows-1.svg
 
 32. append_rows-2
------------------
+#################
 
     ::
     
@@ -704,7 +704,7 @@ Usage
 .. image:: ./images/append_rows-2.svg
 
 33. prepend_col-1
------------------
+#################
 
     ::
     
@@ -724,7 +724,7 @@ Usage
 .. image:: ./images/prepend_col-1.svg
 
 34. prepend_col-2
------------------
+#################
 
     ::
     
@@ -745,7 +745,7 @@ Usage
 .. image:: ./images/prepend_col-2.svg
 
 35. prepend_cols-1
-------------------
+##################
 
     ::
     
@@ -767,7 +767,7 @@ Usage
 .. image:: ./images/prepend_cols-1.svg
 
 36. prepend_cols-2
-------------------
+##################
 
     ::
     
@@ -786,7 +786,7 @@ Usage
 .. image:: ./images/prepend_cols-2.svg
 
 37. prepend_row-1
------------------
+#################
 
     ::
     
@@ -804,7 +804,7 @@ Usage
 .. image:: ./images/prepend_row-1.svg
 
 38. prepend_row-2
------------------
+#################
 
     ::
     
@@ -826,7 +826,7 @@ Usage
 .. image:: ./images/prepend_row-2.svg
 
 39. prepend_rows-1
-------------------
+##################
 
     ::
     
@@ -847,7 +847,7 @@ Usage
 .. image:: ./images/prepend_rows-1.svg
 
 40. prepend_rows-2
-------------------
+##################
 
     ::
     
@@ -869,7 +869,7 @@ Usage
 .. image:: ./images/prepend_rows-2.svg
 
 41. transpose
--------------
+#############
 
     ::
     
@@ -887,7 +887,7 @@ Usage
 .. image:: ./images/transpose.svg
 
 42. rename_cols
----------------
+###############
 
     ::
     
@@ -907,7 +907,7 @@ Usage
 .. image:: ./images/rename_cols.svg
 
 43. repl_col-1
---------------
+##############
 
     ::
     
@@ -925,7 +925,7 @@ Usage
 .. image:: ./images/repl_col-1.svg
 
 44. repl_col-2
---------------
+##############
 
     ::
     
@@ -949,7 +949,7 @@ Usage
 .. image:: ./images/repl_col-2.svg
 
 45. repl_cols
--------------
+#############
 
     ::
     
@@ -973,7 +973,7 @@ Usage
 .. image:: ./images/repl_cols.svg
 
 46. repl_row-1
---------------
+##############
 
     ::
     
@@ -994,7 +994,7 @@ Usage
 .. image:: ./images/repl_row-1.svg
 
 47. repl_row-2
---------------
+##############
 
     ::
     
@@ -1015,7 +1015,7 @@ Usage
 .. image:: ./images/repl_row-2.svg
 
 48. repl_rows
--------------
+#############
 
     ::
     
@@ -1039,7 +1039,7 @@ Usage
 .. image:: ./images/repl_rows.svg
 
 49. flipud
-----------
+##########
 
     ::
     
@@ -1056,7 +1056,7 @@ Usage
 .. image:: ./images/flipud.svg
 
 50. fliplr
-----------
+##########
 
     ::
     
