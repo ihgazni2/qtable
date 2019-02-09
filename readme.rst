@@ -40,7 +40,7 @@ Usage
         qtbl = Qtable(mat= np.arange(25).reshape((5,5)),index=['a','c','d','a','e'],columns=['one', 'two', 'three','one','four'])
         qtbl
 
-.. image:: ./images/__init__.svg
+.. image:: /docs/images/__init__.svg
 
 1. __getitem__
 ##############
@@ -62,7 +62,7 @@ Usage
         
         
 
-.. image:: ./images/__getitem__.svg
+.. image:: /docs/images/__getitem__.svg
 
 2. __setitem__
 ##############
@@ -85,7 +85,7 @@ Usage
         qtbl['a','one'] = [[100,300],[1500,1800]]
         qtbl
 
-.. image:: ./images/__setitem__.svg
+.. image:: /docs/images/__setitem__.svg
 
 3. row
 ######
@@ -106,7 +106,7 @@ Usage
         qtbl.row('a',1)
         qtbl.row('a',0,1)
 
-.. image:: ./images/row.svg
+.. image:: /docs/images/row.svg
 
 4. col
 ######
@@ -126,7 +126,7 @@ Usage
         qtbl.col('one',0)
         qtbl.col('one',1)
 
-.. image:: ./images/col.svg
+.. image:: /docs/images/col.svg
 
 5. cols
 #######
@@ -149,7 +149,7 @@ Usage
         
         
 
-.. image:: ./images/cols.svg
+.. image:: /docs/images/cols.svg
 
 6. rows
 #######
@@ -172,7 +172,7 @@ Usage
         
         
 
-.. image:: ./images/rows.svg
+.. image:: /docs/images/rows.svg
 
 7. subtb
 ########
@@ -192,7 +192,7 @@ Usage
         qtbl.subtb(['a','c'],['one','three'])
         qtbl.subtb(['a','c','d'],['one','three','two','one'])
 
-.. image:: ./images/subtb.svg
+.. image:: /docs/images/subtb.svg
 
 8. crop
 #######
@@ -213,7 +213,7 @@ Usage
         
         
 
-.. image:: ./images/crop.svg
+.. image:: /docs/images/crop.svg
 
 9. swapcol
 ##########
@@ -234,7 +234,7 @@ Usage
         qtbl.swapcol('one','two',1)
         qtbl.swapcol('one','two',1,1)
 
-.. image:: ./images/swapcol.svg
+.. image:: /docs/images/swapcol.svg
 
 10. reindex_cols
 ################
@@ -256,7 +256,7 @@ Usage
         qtbl.reindex_cols(['one','two','two'])
         qtbl.reindex_cols(['one','two','two'],whiches=[0,0,1])
 
-.. image:: ./images/reindex_cols.svg
+.. image:: /docs/images/reindex_cols.svg
 
 11. swaprow
 ###########
@@ -281,7 +281,7 @@ Usage
         
         
 
-.. image:: ./images/swaprow.svg
+.. image:: /docs/images/swaprow.svg
 
 12. reindex_rows
 ################
@@ -302,7 +302,7 @@ Usage
         qtbl.reindex_rows(["a","a","c","c"])
         qtbl.reindex_rows("a","a","c","c",whiches=[0,1,0,1])
 
-.. image:: ./images/reindex_rows.svg
+.. image:: /docs/images/reindex_rows.svg
 
 13. rmcol
 #########
@@ -325,7 +325,7 @@ Usage
         
         
 
-.. image:: ./images/rmcol.svg
+.. image:: /docs/images/rmcol.svg
 
 14. rmcols
 ##########
@@ -351,7 +351,7 @@ Usage
         
         
 
-.. image:: ./images/rmcols.svg
+.. image:: /docs/images/rmcols.svg
 
 15. rmrow
 #########
@@ -371,7 +371,7 @@ Usage
         qtbl.rmrow('a',0)
         qtbl.rmrow('a',1)
 
-.. image:: ./images/rmrow.svg
+.. image:: /docs/images/rmrow.svg
 
 16. rmrows
 ##########
@@ -398,7 +398,7 @@ Usage
         
         
 
-.. image:: ./images/rmrows.svg
+.. image:: /docs/images/rmrows.svg
 
 17. insert_col-1
 ################
@@ -418,7 +418,7 @@ Usage
         qtbl.insert_col(2,"x",[100,200,300,400,500])
         qtbl.insert_col(2,{"x":[100,200,300,400,500]})
 
-.. image:: ./images/insert_col-1.svg
+.. image:: /docs/images/insert_col-1.svg
 
 18. insert_col-2
 ################
@@ -439,7 +439,7 @@ Usage
         qtbl.insert_col("two","four",[100,200,300,400,500],which=0)
         qtbl.insert_col("two","four",[100,200,300,400,500],which=1)
 
-.. image:: ./images/insert_col-2.svg
+.. image:: /docs/images/insert_col-2.svg
 
 19. insert_cols-1
 #################
@@ -461,7 +461,7 @@ Usage
         qtbl.insert_cols(2,{"x":[100,200,300,400,500],"y":[1000,2000,3000,4000,5000]})
         qtbl.insert_cols(2,"three",100,200,300,400,500,"three",1000,2000,3000,4000,5000)
 
-.. image:: ./images/insert_cols-1.svg
+.. image:: /docs/images/insert_cols-1.svg
 
 20. insert_cols-2
 #################
@@ -486,7 +486,7 @@ Usage
         
         
 
-.. image:: ./images/insert_cols-2.svg
+.. image:: /docs/images/insert_cols-2.svg
 
 21. insert_row-1
 ################
@@ -504,7 +504,7 @@ Usage
         qtbl.insert_row(2,"x",[100,200,300,400,500])
         qtbl.insert_row(2,{"x":[100,200,300,400,500]})
 
-.. image:: ./images/insert_row-1.svg
+.. image:: /docs/images/insert_row-1.svg
 
 22. insert_row-2
 ################
@@ -525,7 +525,7 @@ Usage
         qtbl.insert_row("a","c",[100,200,300,400,500],which=0)
         qtbl.insert_row("a","c",[100,200,300,400,500],which=1)
 
-.. image:: ./images/insert_row-2.svg
+.. image:: /docs/images/insert_row-2.svg
 
 23. insert_rows-1
 #################
@@ -543,7 +543,7 @@ Usage
         qtbl.insert_rows(2,"x",[100,200,300,400,500],"y",[1000,2000,3000,4000,5000])
         qtbl.insert_rows(2,{"x":[100,200,300,400,500],"y":[1000,2000,3000,4000,5000]})
 
-.. image:: ./images/insert_rows-1.svg
+.. image:: /docs/images/insert_rows-1.svg
 
 24. insert_rows-2
 #################
@@ -565,7 +565,7 @@ Usage
         qtbl.insert_rows("a","x",[100,200,300,400,500],"y",[1000,2000,3000,4000,5000],which=0)
         qtbl.insert_rows("a","x",[100,200,300,400,500],"y",[1000,2000,3000,4000,5000],which=1)
 
-.. image:: ./images/insert_rows-2.svg
+.. image:: /docs/images/insert_rows-2.svg
 
 25. append_col-1
 ################
@@ -585,7 +585,7 @@ Usage
         qtbl.append_col("x",[100,200,300,400,500])
         qtbl.append_col({"x":[100,200,300,400,500]})
 
-.. image:: ./images/append_col-1.svg
+.. image:: /docs/images/append_col-1.svg
 
 26. append_col-2
 ################
@@ -603,7 +603,7 @@ Usage
         qtbl.append_col("four",[100,200,300,400,500])
         qtbl.append_col({"four":[100,200,300,400,500]})
 
-.. image:: ./images/append_col-2.svg
+.. image:: /docs/images/append_col-2.svg
 
 27. append_cols-1
 #################
@@ -625,7 +625,7 @@ Usage
         qtbl.append_cols({"x":[100,200,300,400,500],"y":[1000,2000,3000,4000,5000]})
         qtbl.append_cols("three",100,200,300,400,500,"three",1000,2000,3000,4000,5000)
 
-.. image:: ./images/append_cols-1.svg
+.. image:: /docs/images/append_cols-1.svg
 
 28. append_cols-2
 #################
@@ -644,7 +644,7 @@ Usage
         qtbl.append_cols("three",100,200,300,400,500,"three",1000,2000,3000,4000,5000)
         qtbl.append_cols("three",[100,200,300,400,500],"three",[1000,2000,3000,4000,5000])
 
-.. image:: ./images/append_cols-2.svg
+.. image:: /docs/images/append_cols-2.svg
 
 29. append_row-1
 ################
@@ -662,7 +662,7 @@ Usage
         qtbl.append_row("x",[100,200,300,400,500])
         qtbl.append_row({"x":[100,200,300,400,500]})
 
-.. image:: ./images/append_row-1.svg
+.. image:: /docs/images/append_row-1.svg
 
 30. append_row-2
 ################
@@ -683,7 +683,7 @@ Usage
         
         
 
-.. image:: ./images/append_row-2.svg
+.. image:: /docs/images/append_row-2.svg
 
 31. append_rows-1
 #################
@@ -704,7 +704,7 @@ Usage
         
         
 
-.. image:: ./images/append_rows-1.svg
+.. image:: /docs/images/append_rows-1.svg
 
 32. append_rows-2
 #################
@@ -726,7 +726,7 @@ Usage
         
         
 
-.. image:: ./images/append_rows-2.svg
+.. image:: /docs/images/append_rows-2.svg
 
 33. prepend_col-1
 #################
@@ -746,7 +746,7 @@ Usage
         qtbl.prepend_col("x",[100,200,300,400,500])
         qtbl.prepend_col({"x":[100,200,300,400,500]})
 
-.. image:: ./images/prepend_col-1.svg
+.. image:: /docs/images/prepend_col-1.svg
 
 34. prepend_col-2
 #################
@@ -767,7 +767,7 @@ Usage
         
         
 
-.. image:: ./images/prepend_col-2.svg
+.. image:: /docs/images/prepend_col-2.svg
 
 35. prepend_cols-1
 ##################
@@ -789,7 +789,7 @@ Usage
         qtbl.prepend_cols({"x":[100,200,300,400,500],"y":[1000,2000,3000,4000,5000]})
         qtbl.prepend_cols("three",100,200,300,400,500,"three",1000,2000,3000,4000,5000)
 
-.. image:: ./images/prepend_cols-1.svg
+.. image:: /docs/images/prepend_cols-1.svg
 
 36. prepend_cols-2
 ##################
@@ -808,7 +808,7 @@ Usage
         qtbl.prepend_cols("three",100,200,300,400,500,"three",1000,2000,3000,4000,5000)
         qtbl.prepend_cols("three",[100,200,300,400,500],"three",[1000,2000,3000,4000,5000])
 
-.. image:: ./images/prepend_cols-2.svg
+.. image:: /docs/images/prepend_cols-2.svg
 
 37. prepend_row-1
 #################
@@ -826,7 +826,7 @@ Usage
         qtbl.prepend_row("x",[100,200,300,400,500])
         qtbl.prepend_row({"x":[100,200,300,400,500]})
 
-.. image:: ./images/prepend_row-1.svg
+.. image:: /docs/images/prepend_row-1.svg
 
 38. prepend_row-2
 #################
@@ -848,7 +848,7 @@ Usage
         
         
 
-.. image:: ./images/prepend_row-2.svg
+.. image:: /docs/images/prepend_row-2.svg
 
 39. prepend_rows-1
 ##################
@@ -869,7 +869,7 @@ Usage
         
         
 
-.. image:: ./images/prepend_rows-1.svg
+.. image:: /docs/images/prepend_rows-1.svg
 
 40. prepend_rows-2
 ##################
@@ -891,7 +891,7 @@ Usage
         
         
 
-.. image:: ./images/prepend_rows-2.svg
+.. image:: /docs/images/prepend_rows-2.svg
 
 41. transpose
 #############
@@ -909,7 +909,7 @@ Usage
         qtbl
         qtbl.transpose()
 
-.. image:: ./images/transpose.svg
+.. image:: /docs/images/transpose.svg
 
 42. rename_cols
 ###############
@@ -929,7 +929,7 @@ Usage
         qtbl.rename_rows("R0","R1","R2","R3","R4")
         qtbl.rename_rows(["R0","R1","R2","R3","R4"])
 
-.. image:: ./images/rename_cols.svg
+.. image:: /docs/images/rename_cols.svg
 
 43. repl_col-1
 ##############
@@ -947,7 +947,7 @@ Usage
         qtbl.repl_col(2,"x",[100,200,300,400,500])
         qtbl.repl_col(2,{"x":[100,200,300,400,500]})
 
-.. image:: ./images/repl_col-1.svg
+.. image:: /docs/images/repl_col-1.svg
 
 44. repl_col-2
 ##############
@@ -971,7 +971,7 @@ Usage
         
         
 
-.. image:: ./images/repl_col-2.svg
+.. image:: /docs/images/repl_col-2.svg
 
 45. repl_cols
 #############
@@ -995,7 +995,7 @@ Usage
         
         
 
-.. image:: ./images/repl_cols.svg
+.. image:: /docs/images/repl_cols.svg
 
 46. repl_row-1
 ##############
@@ -1016,7 +1016,7 @@ Usage
         
         
 
-.. image:: ./images/repl_row-1.svg
+.. image:: /docs/images/repl_row-1.svg
 
 47. repl_row-2
 ##############
@@ -1037,7 +1037,7 @@ Usage
         
         
 
-.. image:: ./images/repl_row-2.svg
+.. image:: /docs/images/repl_row-2.svg
 
 48. repl_rows
 #############
@@ -1061,7 +1061,7 @@ Usage
         
         
 
-.. image:: ./images/repl_rows.svg
+.. image:: /docs/images/repl_rows.svg
 
 49. flipud
 ##########
@@ -1078,7 +1078,7 @@ Usage
         qtbl
         qtbl.flipud()
 
-.. image:: ./images/flipud.svg
+.. image:: /docs/images/flipud.svg
 
 50. fliplr
 ##########
@@ -1098,7 +1098,7 @@ Usage
         
         
 
-.. image:: ./images/fliplr.svg
+.. image:: /docs/images/fliplr.svg
 
 
         
