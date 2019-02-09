@@ -1,5 +1,12 @@
+    def loc(self,value):
+    返回positions [(rn,cn,rownum,colnum)]
+    def返回values value(rn,cn)
+    [(value,rownum,colnum)]
+    #######
     def keys(self):
+    平坦化所有keys
     def values(self):
+    平坦化所有values
     def items(self):
     def clear(self):
     def __mul__(self,crtb_2):
@@ -30,3 +37,5 @@
     def swap_cols(s,colseqs1,colseqs2,**kwargs)
     def swap_rows(s,rowseqs1,rowseqs2,**kwargs)
     def maprcv
+
+
