@@ -395,9 +395,6 @@ def _insert_col(df,pos,*args,**kwargs):
         else:
             values = args[1:]
     ####
-    print(pos)
-    print(colname)
-    print(values)
     ####
     df.insert(pos,colname,values,kwargs['allow_duplicates'])
     return(df)
@@ -449,11 +446,11 @@ def _append_cols(df,*args,**kwargs):
     return(_insert_cols(df,pos,*args,**kwargs))
 
 def _append_row(df,*args,**kwargs):
-    pos = df.columns.__len__()
+    pos = df.index.__len__()
     return(_insert_row(df,pos,*args,**kwargs))
 
 def _append_rows(df,*args,**kwargs):
-    pos = df.columns.__len__()
+    pos = df.index.__len__()
     return(_insert_rows(df,pos,*args,**kwargs))
 
 def _prepend_col(df,*args,**kwargs):
