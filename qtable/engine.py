@@ -394,6 +394,11 @@ def _insert_col(df,pos,*args,**kwargs):
             values = args[1]
         else:
             values = args[1:]
+    ####
+    print(pos)
+    print(colname)
+    print(values)
+    ####
     df.insert(pos,colname,values,kwargs['allow_duplicates'])
     return(df)
 
