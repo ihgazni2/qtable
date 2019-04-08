@@ -1,7 +1,7 @@
 from qtable.engine import *
 import pandas as pd
 import numpy as np
-
+import copy
 
 
 class Qtable():
@@ -161,6 +161,9 @@ class Qtable():
     def flipud(self):
         df = _flipud(self.df,index_map=self.index_map,columns_map=self.columns_map)
         return(Qtable(df=df))
-
+    def to_mat(self):
+        m = self.df.values.tolist()
+        m = copy.deepcopy(m)
+        return(m)
 
 
