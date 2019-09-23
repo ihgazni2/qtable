@@ -154,7 +154,8 @@ class Qtable():
         df = _repl_rows(self.df,poses,*args,index_map=self.columns_map,columns_map=self.index_map,allow_duplicates=self.allow_duplicates,**kwargs)
         return(Qtable(df=df))
     def transpose(self):
-        return(_transpose(self.df))
+        df = _transpose(self.df)
+        return(Qtable(df=df))
     def fliplr(self):
         df = _fliplr(self.df,index_map=self.index_map,columns_map=self.columns_map)
         return(Qtable(df=df))
