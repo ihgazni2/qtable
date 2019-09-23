@@ -11,9 +11,10 @@
 
 Installation
 ------------
+
     ::
     
-    $ pip3 install qtable
+        $ pip3 install qtable
 
 
 License
